@@ -10,54 +10,53 @@
         <link href="https://fonts.googleapis.com/css?family=Gugi|Quattrocento" rel="stylesheet">
     </head>
     <body>
-
-        <nav >
+    <nav >
             <ul class="menu">
                 <li><a href="">CONTABILIDAD</a>
                 <ul>
-                    <li><a href="../contabilidad/plan-de-cuentas.html">PLAN DE CUENTAS</a></li>
-                    <li><a href="../contabilidad/diarios.php">DIARIOS</a></li>
-                    <li><a href="../contabilidad/egresos.html">EGRESOS</a></li>
-                    <li><a href="../contabilidad/notas-de-creditos.html">NOTAS DE CRÉDITOS</a></li>
-                    <li><a href="../contabilidad/notas-debito.html">NOTAS DE DÉBITO</a></li>
-                    <li><a href="../contabilidad/rol-de-pagos.html">ROL DE PAGOS</a></li>
-                    <li><a href="../contabilidad/depreciaciones.html">DEPRECIACIONES</a></li>
+                    <li><a href="../plan_de_cuentas/plan_de_cuentas.php">PLAN DE CUENTAS</a></li>
+                    <li><a href="../diarios/diarios.php">DIARIOS</a></li>
+                    <li><a href="../egresos/egresos.php">EGRESOS</a></li>
+                    <li><a href="../notas_de_creditos/notas_de_credito.php">NOTAS DE CRÉDITOS</a></li>
+                    <li><a href="../notas_debito/notas_debitos.php">NOTAS DE DÉBITOS</a></li>
+                    <li><a href="../rol_de_pagos/rol_de_pagos.php">ROL DE PAGOS</a></li>
+                    <li><a href="depreciaciones.php">DEPRECIACIONES</a></li>
                 </ul></li>
                 <li><a href="">COMPRAS</a>
                 <ul>
-                   <li><a href="../compras/compras.html">COMPRAS</a></li>
-                   <li><a href="../compras/proveedores.html">PROVEEDORES</a></li>
-                   <li><a href="../compras/cuentas-a-pagar.html">CUENTAS A PAGAR</a></li>
-                   <li><a href="../compras/retenciones.html">RETENCIONES</a></li>
-                   <li><a href="../compras/formas-de-pago.html">FORMAS DE PAGO</a></li>
-                   <li><a href="../compras/facturacion-electronica.html">FACTURACION ELECTRONICA</a></li>
+                   <li><a href="../../compras/compras/compras.php">COMPRAS</a></li>
+                   <li><a href="../../compras/proveedores/proveedores.php">PROVEEDORES</a></li>
+                   <li><a href="../../compras/cuentas_a_pagar/cuentas_a_pagar.php">CUENTAS A PAGAR</a></li>
+                   <li><a href="../../compras/retenciones/retenciones.php">RETENCIONES</a></li>
+                   <li><a href="../../compras/formas_de_pagos/formas_de_pagos.php">FORMAS DE PAGO</a></li>
+                   <li><a href="../../compras/facturacion_electronica/facturacion_electronica.php">FACTURACION ELECTRONICA</a></li>
                 </ul></li>
                 <li><a href="">VENTAS</a>
                 <ul>
-                   <li><a href="../ventas/ventas.html">VENTAS</a></li>
-                   <li><a href="../ventas/clientes.html">CLIENTES</a></li>
-                   <li><a href="../ventas/cuentas-por-cobrar.html">CUENTAS POR COBRAR</a></li>
-                   <li><a href="../ventas/retenciones.html">RETENCIONES</a></li>
-                   <li><a href="../ventas/facturacion-electronica.html">FACTURACION ELECTRONICA</a></li>
+                   <li><a href="../../ventas/ventas/ventas.php">VENTAS</a></li>
+                   <li><a href="../../ventas/clientes/clientes.php">CLIENTES</a></li>
+                   <li><a href="../../ventas/cuentas_por_cobrar/cuentas_por_cobrar.php">CUENTAS POR COBRAR</a></li>
+                   <li><a href="../../ventas/retenciones/retenciones.php">RETENCIONES</a></li>
+                   <li><a href="../../ventas/facturacion_electronica/facturacion_electronica.php">FACTURACION ELECTRONICA</a></li>
                </ul></li>
                 <li><a href="">INVENTARIOS</a>
                 <ul>
-                   <li><a href="../inventarios/productos.html">PRODUCTOS</a></li>
-                   <li><a href="../inventarios/kardex.html">KARDEX</a></li>
+                   <li><a href="../../inventarios/productos/productos.php">PRODUCTOS</a></li>
+                   <li><a href="../../inventarios/kardex/kardex.php">KARDEX</a></li>
                </ul></li>
-                <li><a href="../reportes/reportes.html">REPORTES</a></li>
+                <li><a href="../../reportes/reportes/reportes.php">REPORTES</a></li>
                 <li><a href="">BANCOS</a>
                 <ul>
-                   <li><a href="../bancos/crear-banco.html">CREAR BANCO</a></li>
-                   <li><a href="../bancos/conciliacion-bancaria.html">CONCILIACION BANCARIA</a></li>
-                   <li><a href="../bancos/tarjetas-de-creditos.html">TARJETAS DE CRÉDITOS</a></li>
-                   <li><a href="../bancos/libro.bancos.html">LIBRO BANCOS</a></li>
+                   <li><a href="../../bancos/crear_banco/crear_banco.php">CREAR BANCO</a></li>
+                   <li><a href="../../bancos/contabilidad_bancaria/conciliacion_bancaria.php">CONCILIACION BANCARIA</a></li>
+                   <li><a href="../../bancos/tarjetas_de_creditos/tarjetas-de-creditos.php">TARJETAS DE CRÉDITOS</a></li>
+                   <li><a href="../../bancos/libro_bancos/libro_bancos.php">LIBRO BANCOS</a></li>
                </ul></li>
-                <li><a href="../estados-financieros/estados-financieros.html">ESTADOS FINANCIEROS</a>
-                <li><a href="../parametros/parametros.html">PARÁMETROS</a></li>
-                <li><a href="../nomina/nomina.html">NÓMINA</a></li>
-                <li><a href="../impuestos/impuestos.html">IMPUESTOS</a></li>
-                <li><a href="../activos-fijos/activos-fijos.html">ACTIVOS FIJOS</a></li>
+                <li><a href="../../estados_financieros/estados_financieros/estados_financieros.php">ESTADOS FINANCIEROS</a>
+                <li><a href="../../parametros/parametros/parametros.php">PARÁMETROS</a></li>
+                <li><a href="../../nomina/nomina/nomina.php">NÓMINA</a></li>
+                <li><a href="../../impuestos/impuestos/impuestos.php">IMPUESTOS</a></li>
+                <li><a href="../../activos_fijos/activos_fijos/activos_fijos.php">ACTIVOS FIJOS</a></li>
             </ul></li>
         </nav> 
         <a href="../../imr/menu/menu.php"><img src="../../imagenes/menu.jpg" width="70" height="70" alt=""id="menuIcono"></a>

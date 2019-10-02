@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width-divice-width, initial-scale=1">
-        <title>Egresos</title>
+        <title>Activos fijos</title>
         <meta name= "description">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <link rel="stylesheet" href="../../imr/menu/menu.css">
@@ -14,13 +14,13 @@
             <ul class="menu">
                 <li><a href="">CONTABILIDAD</a>
                 <ul>
-                    <li><a href="../plan_de_cuentas/plan_de_cuentas.php">PLAN DE CUENTAS</a></li>
-                    <li><a href="../diarios/diarios.php">DIARIOS</a></li>
-                    <li><a href="egresos.php">EGRESOS</a></li>
-                    <li><a href="../notas_de_creditos/notas_de_credito.php">NOTAS DE CRÉDITOS</a></li>
-                    <li><a href="../notas_debito/notas_debitos.php">NOTAS DE DÉBITOS</a></li>
-                    <li><a href="../rol_de_pagos/rol_de_pagos.php">ROL DE PAGOS</a></li>
-                    <li><a href="../depreciaciones/depreciaciones.php">DEPRECIACIONES</a></li>
+                    <li><a href="../../contabilidad/plan_de_cuentas/plan_de_cuentas.php">PLAN DE CUENTAS</a></li>
+                    <li><a href="../../contabilidad/diarios/diarios.php">DIARIOS</a></li>
+                    <li><a href="../../contabilidad/egresos/egresos.php">EGRESOS</a></li>
+                    <li><a href="../../contabilidad/notas_de_creditos/notas_de_credito.php">NOTAS DE CRÉDITOS</a></li>
+                    <li><a href="../../contabilidad/notas_debito/notas_debitos.php">NOTAS DE DÉBITOS</a></li>
+                    <li><a href="../../contabilidad/rol_de_pagos/rol_de_pagos.php">ROL DE PAGOS</a></li>
+                    <li><a href="../../contabilidad/depreciaciones/depreciaciones.php">DEPRECIACIONES</a></li>
                 </ul></li>
                 <li><a href="">COMPRAS</a>
                 <ul>
@@ -56,9 +56,9 @@
                 <li><a href="../../parametros/parametros/parametros.php">PARÁMETROS</a></li>
                 <li><a href="../../nomina/nomina/nomina.php">NÓMINA</a></li>
                 <li><a href="../../impuestos/impuestos/impuestos.php">IMPUESTOS</a></li>
-                <li><a href="../../activos_fijos/activos_fijos/activos_fijos.php">ACTIVOS FIJOS</a></li>
+                <li><a href="activos_fijos.php">ACTIVOS FIJOS</a></li>
             </ul></li>
-        </nav> 
+    </nav> 
         <a href="../../imr/menu/menu.php"><img src="../../imagenes/menu.jpg" width="70" height="70" alt=""id="menuIcono"></a>
         <section> 
          

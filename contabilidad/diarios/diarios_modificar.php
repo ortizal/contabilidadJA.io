@@ -20,7 +20,7 @@
                     <li><a href="../contabilidad/diarios.php">DIARIOS</a></li>
                     <li><a href="../contabilidad/egresos.html">EGRESOS</a></li>
                     <li><a href="../contabilidad/notas-de-creditos.html">NOTAS DE CRÉDITOS</a></li>
-                    <li><a href="../contabilidad/notas-debito.html">NOTAS DE DÉBITO</a></li>
+                    <li><a href="../contabilidad/notas-debito.html">NOTAS DE DÉBITOS</a></li>
                     <li><a href="../contabilidad/rol-de-pagos.html">ROL DE PAGOS</a></li>
                     <li><a href="../contabilidad/depreciaciones.html">DEPRECIACIONES</a></li>
                 </ul></li>

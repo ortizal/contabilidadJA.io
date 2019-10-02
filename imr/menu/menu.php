@@ -15,13 +15,13 @@
             <ul class="menu">
                 <li><a href="">CONTABILIDAD</a>
                 <ul>
-                    <li><a href="../contabilidad/plan-de-cuentas.html">PLAN DE CUENTAS</a></li>
-                    <li><a href="../contabilidad/diarios.php">DIARIOS</a></li>
-                    <li><a href="../contabilidad/egresos.html">EGRESOS</a></li>
-                    <li><a href="../contabilidad/notas-de-creditos.html">NOTAS DE CRÉDITOS</a></li>
-                    <li><a href="../contabilidad/notas-debito.html">NOTAS DE DÉBITO</a></li>
-                    <li><a href="../contabilidad/rol-de-pagos.html">ROL DE PAGOS</a></li>
-                    <li><a href="../contabilidad/depreciaciones.html">DEPRECIACIONES</a></li>
+                    <li><a href="../../contabilidad/plan_de_cuentas/plan_de_cuentas.php">PLAN DE CUENTAS</a></li>
+                    <li><a href="../../contabilidad/diarios/diarios.php">DIARIOS</a></li>
+                    <li><a href="../../contabilidad/egresos/egresos.php">EGRESOS</a></li>
+                    <li><a href="../../contabilidad/notas_de_creditos/notas_de_credito.php">NOTAS DE CRÉDITOS</a></li>
+                    <li><a href="../../contabilidad/notas_debito/notas_debitos.php">NOTAS DE DÉBITOS</a></li>
+                    <li><a href="../../contabilidad/rol_de_pagos/rol_de_pagos.php">ROL DE PAGOS</a></li>
+                    <li><a href="../../contabilidad/depreciaciones/depreciaciones.php">DEPRECIACIONES</a></li>
                 </ul></li>
                 <li><a href="">COMPRAS</a>
                 <ul>

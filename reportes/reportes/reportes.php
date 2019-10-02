@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width-divice-width, initial-scale=1">
-        <title>Egresos</title>
+        <title>Reportes</title>
         <meta name= "description">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <link rel="stylesheet" href="../../imr/menu/menu.css">
@@ -14,13 +14,13 @@
             <ul class="menu">
                 <li><a href="">CONTABILIDAD</a>
                 <ul>
-                    <li><a href="../plan_de_cuentas/plan_de_cuentas.php">PLAN DE CUENTAS</a></li>
-                    <li><a href="../diarios/diarios.php">DIARIOS</a></li>
-                    <li><a href="egresos.php">EGRESOS</a></li>
-                    <li><a href="../notas_de_creditos/notas_de_credito.php">NOTAS DE CRÉDITOS</a></li>
-                    <li><a href="../notas_debito/notas_debitos.php">NOTAS DE DÉBITOS</a></li>
-                    <li><a href="../rol_de_pagos/rol_de_pagos.php">ROL DE PAGOS</a></li>
-                    <li><a href="../depreciaciones/depreciaciones.php">DEPRECIACIONES</a></li>
+                    <li><a href="../../contabilidad/plan_de_cuentas/plan_de_cuentas.php">PLAN DE CUENTAS</a></li>
+                    <li><a href="../../contabilidad/diarios/diarios.php">DIARIOS</a></li>
+                    <li><a href="../../contabilidad/egresos/egresos.php">EGRESOS</a></li>
+                    <li><a href="../../contabilidad/notas_de_creditos/notas_de_credito.php">NOTAS DE CRÉDITOS</a></li>
+                    <li><a href="../../contabilidad/notas_debito/notas_debitos.php">NOTAS DE DÉBITOS</a></li>
+                    <li><a href="../../contabilidad/rol_de_pagos/rol_de_pagos.php">ROL DE PAGOS</a></li>
+                    <li><a href="../../contabilidad/depreciaciones/depreciaciones.php">DEPRECIACIONES</a></li>
                 </ul></li>
                 <li><a href="">COMPRAS</a>
                 <ul>
@@ -44,7 +44,7 @@
                    <li><a href="../../inventarios/productos/productos.php">PRODUCTOS</a></li>
                    <li><a href="../../inventarios/kardex/kardex.php">KARDEX</a></li>
                </ul></li>
-                <li><a href="../../reportes/reportes/reportes.php">REPORTES</a></li>
+                <li><a href="reportes.php">REPORTES</a></li>
                 <li><a href="">BANCOS</a>
                 <ul>
                    <li><a href="../../bancos/crear_banco/crear_banco.php">CREAR BANCO</a></li>

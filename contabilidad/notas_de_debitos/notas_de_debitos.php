@@ -3,23 +3,22 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width-divice-width, initial-scale=1">
-        <title>Diarios</title>
+        <title>Notas de debito</title>
         <meta name= "description">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <link rel="stylesheet" href="../../imr/menu/menu.css">
-        <link rel="stylesheet" href="diarios.css">
         <link href="https://fonts.googleapis.com/css?family=Gugi|Quattrocento" rel="stylesheet">
     </head>
     <body>
-        <nav >
-            <ul class="menu">
+    <nav >
+     <ul class="menu">
                 <li><a href="">CONTABILIDAD</a>
                 <ul>
                     <li><a href="../plan_de_cuentas/plan_de_cuentas.php">PLAN DE CUENTAS</a></li>
-                    <li><a href="diarios.php">DIARIOS</a></li>
+                    <li><a href="../diarios/diarios.php">DIARIOS</a></li>
                     <li><a href="../egresos/egresos.php">EGRESOS</a></li>
                     <li><a href="../notas_de_creditos/notas_de_credito.php">NOTAS DE CRÉDITOS</a></li>
-                    <li><a href="../notas_debito/notas_debitos.php">NOTAS DE DÉBITOS</a></li>
+                    <li><a href="notas_debitos.php">NOTAS DE DÉBITOS</a></li>
                     <li><a href="../rol_de_pagos/rol_de_pagos.php">ROL DE PAGOS</a></li>
                     <li><a href="../depreciaciones/depreciaciones.php">DEPRECIACIONES</a></li>
                 </ul></li>
@@ -49,7 +48,7 @@
                 <li><a href="">BANCOS</a>
                 <ul>
                    <li><a href="../../bancos/crear_banco/crear_banco.php">CREAR BANCO</a></li>
-                   <li><a href="../../bancos/conciliacion_bancaria/conciliacion_bancaria.php">CONCILIACION BANCARIA</a></li>
+                   <li><a href="../../bancos/contabilidad_bancaria/conciliacion_bancaria.php">CONCILIACION BANCARIA</a></li>
                    <li><a href="../../bancos/tarjetas_de_creditos/tarjetas-de-creditos.php">TARJETAS DE CRÉDITOS</a></li>
                    <li><a href="../../bancos/libro_bancos/libro_bancos.php">LIBRO BANCOS</a></li>
                </ul></li>
@@ -58,92 +57,11 @@
                 <li><a href="../../nomina/nomina/nomina.php">NÓMINA</a></li>
                 <li><a href="../../impuestos/impuestos/impuestos.php">IMPUESTOS</a></li>
                 <li><a href="../../activos_fijos/activos_fijos/activos_fijos.php">ACTIVOS FIJOS</a></li>
-            </ul></li>
+    </ul></li>
         </nav> 
         <a href="../../imr/menu/menu.php"><img src="../../imagenes/menu.jpg" width="70" height="70" alt=""id="menuIcono"></a>
-        <section>     
-         <form action="diarios_insertar.php" method="POST">
-         <fieldset id ="tablaingreso"> 
-          <legend>Ingreso de Datos</legend>
-           <table>
-              <tr>
-                <td>Numero diario:
-                  <input type="text" name="txt_numDiario" disabled placeholder="AUTOMATICO">
-                  Fecha:
-                  <input type="date" name="txt_fecha" placeholder="AAAA-MM-DD">
-                </td>
-              </tr>
-              <tr>
-                <td>Concepto :
-                 <input type="text" name="txt_concepto" size="60px"> 
-                </td>
-              </tr>
-              <tr>
-                <td>Modulo :
-                  <input type="radio" name="txt_modulo" checked value ="debe"/>Debe <input type="text" name="txt_debe">
-                  <input type="radio" name="txt_modulo"value ="haber"/>Haber <input type="text" name="txt_haber">
-                </td>
-              </tr>
-              <tr>
-                <td>Referencia:
-                   <input type="text" name="txt_referencia">
-                </td>
-              </tr>
-              <tr>
-                <td> Cuenta:
-                  <input type="text" name="txt_cuenta">
-                  <button type="submit">Agregar</button>
-                </td>
-              </tr>
-           </table>
-         </fieldset>
-         <fieldset id="tabladatos">
-          <legend>Datos para visualizar</legend>
-          <table id="datos">
-            <tbody>
-             <tr>
-              <th>Modulo</th>
-              <th>Cuenta</th>
-              <th>Referencia</th>
-              <th>Concepto</th>
-              <th>Debe</th>
-              <th>Haber</th>
-              <th colspan ="2"> Operaciones</th>
-             </tr>  
-             <?php 
-             include ("../../conexion/conexion.php");
-             $query= "SELECT * FROM diarios";
-             $resultado = $conexion->query($query);
-             while($row=$resultado->fetch_assoc()){
-              ?>
-              <tr>
-              <td><?php echo $row['drs_modulo']?></td>
-              <td><?php echo $row['drs_cuenta']?></td>
-              <td><?php echo $row['drs_referencia']?></td>
-              <td><?php echo $row['drs_concepto']?></td>
-              <td><?php echo $row['drs_debe']?></td>
-              <td><?php echo $row['drs_haber']?></td>
-              <td><a href="diarios_modificar.php?id=<?php echo $row['drs_id']?>">M</a></td>
-              <td><a href="diarios_eliminar.php?id=<?php echo $row['drs_id']?>">E</a></td>
-              </tr>
-              <?php   
-            }
-              ?>                                  
-                <table id="tablaTotal">
-                  <?php 
-                    $consulta='SELECT sum(drs_debe) as suma from diarios';
-                    $sumadebe = $conexion->query($consulta); 
-                    ?>
-                    <td>Total</td>
-                    <td>Suma de debe</td>
-                    <td>Suma de haber</td>
-                    <td>Diferencia</td>
-                    <td>Debe-Haber</td>
-                </table>
-            </tbody>
-          </table>
-         </fieldset>
-         </form>
+        <section> 
+         
         </section>
        <footer id="footer">
          &copy;2019 &bull; Brothers &bull; JAO &bull; CASH &bull; <span id="currentdate"></span>
