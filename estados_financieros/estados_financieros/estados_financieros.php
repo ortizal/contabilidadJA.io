@@ -48,8 +48,8 @@
                 <li><a href="">BANCOS</a>
                 <ul>
                    <li><a href="../../bancos/crear_banco/crear_banco.php">CREAR BANCO</a></li>
-                   <li><a href="../../bancos/contabilidad_bancaria/conciliacion_bancaria.php">CONCILIACION BANCARIA</a></li>
-                   <li><a href="../../bancos/tarjetas_de_creditos/tarjetas-de-creditos.php">TARJETAS DE CRÉDITOS</a></li>
+                   <li><a href="../../bancos/conciliacion_bancaria/conciliacion_bancaria.php">CONCILIACION BANCARIA</a></li>
+                   <li><a href="../../bancos/tarjetas_de_creditos/tarjetas_de_creditos.php">TARJETAS DE CRÉDITOS</a></li>
                    <li><a href="../../bancos/libro_bancos/libro_bancos.php">LIBRO BANCOS</a></li>
                </ul></li>
                 <li><a href="estados_financieros.php">ESTADOS FINANCIEROS</a>
@@ -58,7 +58,7 @@
                 <li><a href="../../impuestos/impuestos/impuestos.php">IMPUESTOS</a></li>
                 <li><a href="../../activos_fijos/activos_fijos/activos_fijos.php">ACTIVOS FIJOS</a></li>
             </ul></li>
-        </nav> 
+    </nav> 
         <a href="../../imr/menu/menu.php"><img src="../../imagenes/menu.jpg" width="70" height="70" alt=""id="menuIcono"></a>
         <section> 
          

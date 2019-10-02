@@ -49,7 +49,7 @@
                 <ul>
                    <li><a href="../../bancos/crear_banco/crear_banco.php">CREAR BANCO</a></li>
                    <li><a href="conciliacion_bancaria.php">CONCILIACION BANCARIA</a></li>
-                   <li><a href="../../bancos/tarjetas_de_creditos/tarjetas-de-creditos.php">TARJETAS DE CRÉDITOS</a></li>
+                   <li><a href="../../bancos/tarjetas_de_creditos/tarjetas_de_creditos.php">TARJETAS DE CRÉDITOS</a></li>
                    <li><a href="../../bancos/libro_bancos/libro_bancos.php">LIBRO BANCOS</a></li>
                </ul></li>
                 <li><a href="../../estados_financieros/estados_financieros/estados_financieros.php">ESTADOS FINANCIEROS</a>
