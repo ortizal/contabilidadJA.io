@@ -120,5 +120,15 @@ footer {
  color:white;
  background-color: green;
 }
+#menuIcono{
+position: fixed;
+top: 30%;
+left: 50%;
+}
 
+#menuIcono:hover{
+ cursor: pointer;
+ background: rgba(0,0,0,0.3);
+ border: 1px solid white;
+}
     

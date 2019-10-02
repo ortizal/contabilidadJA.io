@@ -9,12 +9,12 @@
  background-color:rgba(0, 128, 0, 0.411);
  color: rgb(3, 3, 3);
  position: absolute ;
- left: 35%;
+ left: 56%;
+ margin-left: -300px;
  top:300px;
 }
 
 #datos{
-    margin: 10px auto;
     border-color: rgba(86, 253, 86, 0.979);
 }
 #datos th {

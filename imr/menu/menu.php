@@ -3,14 +3,14 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width-divice-width, initial-scale=1">
-        <title>Diarios</title>
+        <title>Menu</title>
         <meta name= "description">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <link rel="stylesheet" href="../../imr/menu/menu.css">
-        <link rel="stylesheet" href="diarios.css">
+        <link rel="stylesheet" href="menu.css">
         <link href="https://fonts.googleapis.com/css?family=Gugi|Quattrocento" rel="stylesheet">
     </head>
     <body>
+
         <nav >
             <ul class="menu">
                 <li><a href="">CONTABILIDAD</a>
@@ -60,94 +60,13 @@
                 <li><a href="../activos-fijos/activos-fijos.html">ACTIVOS FIJOS</a></li>
             </ul></li>
         </nav> 
-        <a href="../../imr/menu/menu.php"><img src="../../imagenes/menu.jpg" width="70" height="70" alt=""id="menuIcono"></a>
-        <section>     
-         <form action="diarios_insertar.php" method="POST">
-         <fieldset id ="tablaingreso"> 
-          <legend>Ingreso de Datos</legend>
-           <table>
-              <tr>
-                <td>Numero diario:
-                  <input type="text" name="txt_numDiario" disabled placeholder="AUTOMATICO">
-                  Fecha:
-                  <input type="date" name="txt_fecha" placeholder="AAAA-MM-DD">
-                </td>
-              </tr>
-              <tr>
-                <td>Concepto :
-                 <input type="text" name="txt_concepto" size="60px"> 
-                </td>
-              </tr>
-              <tr>
-                <td>Modulo :
-                  <input type="radio" name="txt_modulo" checked value ="debe"/>Debe <input type="text" name="txt_debe">
-                  <input type="radio" name="txt_modulo"value ="haber"/>Haber <input type="text" name="txt_haber">
-                </td>
-              </tr>
-              <tr>
-                <td>Referencia:
-                   <input type="text" name="txt_referencia">
-                </td>
-              </tr>
-              <tr>
-                <td> Cuenta:
-                  <input type="text" name="txt_cuenta">
-                  <button type="submit">Agregar</button>
-                </td>
-              </tr>
-           </table>
-         </fieldset>
-         <fieldset id="tabladatos">
-          <legend>Datos para visualizar</legend>
-          <table id="datos">
-            <tbody>
-             <tr>
-              <th>Modulo</th>
-              <th>Cuenta</th>
-              <th>Referencia</th>
-              <th>Concepto</th>
-              <th>Debe</th>
-              <th>Haber</th>
-              <th colspan ="2"> Operaciones</th>
-             </tr>  
-             <?php 
-             include ("../../conexion/conexion.php");
-             $query= "SELECT * FROM diarios";
-             $resultado = $conexion->query($query);
-             while($row=$resultado->fetch_assoc()){
-              ?>
-              <tr>
-              <td><?php echo $row['drs_modulo']?></td>
-              <td><?php echo $row['drs_cuenta']?></td>
-              <td><?php echo $row['drs_referencia']?></td>
-              <td><?php echo $row['drs_concepto']?></td>
-              <td><?php echo $row['drs_debe']?></td>
-              <td><?php echo $row['drs_haber']?></td>
-              <td><a href="diarios_modificar.php?id=<?php echo $row['drs_id']?>">M</a></td>
-              <td><a href="diarios_eliminar.php?id=<?php echo $row['drs_id']?>">E</a></td>
-              </tr>
-              <?php   
-            }
-              ?>                                  
-                <table id="tablaTotal">
-                  <?php 
-                    $consulta='SELECT sum(drs_debe) as suma from diarios';
-                    $sumadebe = $conexion->query($consulta); 
-                    ?>
-                    <td>Total</td>
-                    <td>Suma de debe</td>
-                    <td>Suma de haber</td>
-                    <td>Diferencia</td>
-                    <td>Debe-Haber</td>
-                </table>
-            </tbody>
-          </table>
-         </fieldset>
-         </form>
+        <a href="menu.php"><img src="../../imagenes/menu.jpg" width="70" height="70" alt=""id="menuIcono"></a>
+        <section> 
+         
         </section>
        <footer id="footer">
          &copy;2019 &bull; Brothers &bull; JAO &bull; CASH &bull; <span id="currentdate"></span>
        </footer>
-        <script src="../../imr/menu/menu.js"> </script>
+        <script src="menu.js"> </script>
     </body>
 </html>
