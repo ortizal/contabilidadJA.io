@@ -108,7 +108,7 @@
               <th>Concepto</th>
               <th>Debe</th>
               <th>Haber</th>
-              <th colspan ="2"> Operaciones</th>
+              <th colspan ="2" text-align="center"> Operaciones</th>
              </tr>  
              <?php 
              include ("../../conexion/conexion.php");
@@ -123,25 +123,27 @@
               <td><?php echo $row['drs_concepto']?></td>
               <td><?php echo $row['drs_debe']?></td>
               <td><?php echo $row['drs_haber']?></td>
-              <td><a href="diarios_modificar.php?id=<?php echo $row['drs_id']?>">M</a></td>
-              <td><a href="diarios_eliminar.php?id=<?php echo $row['drs_id']?>">E</a></td>
+              <td text-align="center"><a href="diarios_modificar.php?id=<?php echo $row['drs_id']?>"><img src="../../imagenes/editar.png"  width="15" height="15"alt=""></a></td>
+              <td text-align="center"><a href="diarios_eliminar.php?id=<?php echo $row['drs_id']?>"><img src="../../imagenes/borrar.png"  width="15" height="15"alt=""></a></td>
               </tr>
               <?php   
             }
               ?>                                  
-                <table id="tablaTotal">
+
+            </tbody>
+          </table>
+          <table id="tablaTotal">
                   <?php 
                     $consulta='SELECT sum(drs_debe) as suma from diarios';
-                    $sumadebe = $conexion->query($consulta); 
+                    $sumadebe = $conexion->query($consulta);
+                    $row=$sumadebe->fetch_assoc() 
                     ?>
                     <td>Total</td>
-                    <td>Suma de debe</td>
+                    <td><?php echo $row?></td>
                     <td>Suma de haber</td>
                     <td>Diferencia</td>
                     <td>Debe-Haber</td>
                 </table>
-            </tbody>
-          </table>
          </fieldset>
          </form>
         </section>
